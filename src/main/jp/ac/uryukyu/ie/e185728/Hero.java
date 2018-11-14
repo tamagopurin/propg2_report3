@@ -17,10 +17,7 @@ public class Hero extends LivingThing{
      * @param attack ヒーローの攻撃力
      */
     public Hero (String name, int maximumHP, int attack) {
-        this.name = name;
-        hitPoint = maximumHP;
-        this.attack = attack;
-        dead = false;
+        super(name, maximumHP, attack);
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
 
